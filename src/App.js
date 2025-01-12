@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="app">
       {/* <PersistGate loading={<div>Loading...</div>} persistor={persistor}> */}
-      <h1>Task Management Dashboard</h1>
+      <div className="text-center font-semibold my-5 ">Task Management Dashboard</div>
       <TaskForm
         selectedTask={selectedTask}
         clearSelectedTask={clearSelectedTask}
