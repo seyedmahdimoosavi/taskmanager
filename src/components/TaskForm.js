@@ -33,7 +33,7 @@ const TaskForm = React.memo(({ selectedTask, clearSelectedTask }) => {
       axios
         .post("http://localhost:5000/tasks", task)
         .then((response) => {
-          dispatch({ type: "ADD_TASK", payload: response.data });
+          dispatch({ type: "ADD_TASK", payload: response.data.data });
         })
         .catch((error) => console.error("Error adding task:", error));
     }
